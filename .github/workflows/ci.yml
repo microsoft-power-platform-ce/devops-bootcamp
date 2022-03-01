@@ -12,3 +12,7 @@ jobs:
           solution-file: packed-solution/con_Core.zip
           solution-folder: solutions/con_Core/src
           solution-type: Both
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          path: packed-solutions
