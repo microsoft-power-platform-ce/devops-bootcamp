@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: microsoft/powerplatform-actions/pack-solution@v0
         with:
-          solution-file: packed-solution/con_Core.zip
+          solution-file: packed-solutions/con_Core.zip
           solution-folder: solutions/con_Core/src
           solution-type: Both
       - name: Upload a Build Artifact
