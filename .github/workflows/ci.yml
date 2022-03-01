@@ -1,0 +1,14 @@
+name: Build
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - using: actions/checkout@v3
+      - using: microsoft/powerplatform-actions/pack-solution@v0
+        with:
+          solution-file: packed-solution/con_Core.zip
+          solution-folder: solutions/con_Core/src
+          solution-type: Both
